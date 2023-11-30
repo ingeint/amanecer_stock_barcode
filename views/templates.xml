@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="assets_backend" name="Amanecer Barcode Assets Backend" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/amanecer_stock_barcode/static/src/js/client_action/abstract_client_action.js"/>
+            <script type="text/javascript" src="/amanecer_stock_barcode/static/src/js/client_action/lines_widget.js"/>
+        </xpath>
+    </template>
+
+</odoo>
