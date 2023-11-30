@@ -11,8 +11,11 @@
     "data": [
         # "security/ir.model.access.csv",
         "views/templates.xml",
+        "views/product_views.xml",
+        "views/stock_location_views.xml",
+        "views/stock_production_lot_views.xml",
     ],
-    'qweb': [
+    "qweb": [
         "static/src/xml/qweb_templates.xml",
     ],
     "license": "LGPL-3",
