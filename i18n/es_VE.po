@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e-20231120\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-30 15:26+0000\n"
-"PO-Revision-Date: 2023-11-30 15:26+0000\n"
+"POT-Creation-Date: 2023-12-01 15:54+0000\n"
+"PO-Revision-Date: 2023-12-01 15:54+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,11 +16,60 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: amanecer_stock_barcode
+#: model:ir.model.fields.selection,name:amanecer_stock_barcode.selection__block_mixin__block_state__available
+#: model:ir.model.fields.selection,name:amanecer_stock_barcode.selection__product_product__block_state__available
+#: model:ir.model.fields.selection,name:amanecer_stock_barcode.selection__product_template__block_state__available
+#: model:ir.model.fields.selection,name:amanecer_stock_barcode.selection__stock_location__block_state__available
+#: model:ir.model.fields.selection,name:amanecer_stock_barcode.selection__stock_production_lot__block_state__available
+msgid "Available"
+msgstr "Disponible"
+
+#. module: amanecer_stock_barcode
+#: model:ir.model.fields.selection,name:amanecer_stock_barcode.selection__block_mixin__block_state__block
+#: model:ir.model.fields.selection,name:amanecer_stock_barcode.selection__product_product__block_state__block
+#: model:ir.model.fields.selection,name:amanecer_stock_barcode.selection__product_template__block_state__block
+#: model:ir.model.fields.selection,name:amanecer_stock_barcode.selection__stock_location__block_state__block
+#: model:ir.model.fields.selection,name:amanecer_stock_barcode.selection__stock_production_lot__block_state__block
+msgid "Block"
+msgstr "Bloqueado"
+
+#. module: amanecer_stock_barcode
+#: model:ir.model.fields,field_description:amanecer_stock_barcode.field_block_mixin__block_state
+#: model:ir.model.fields,field_description:amanecer_stock_barcode.field_product_product__block_state
+#: model:ir.model.fields,field_description:amanecer_stock_barcode.field_product_template__block_state
+#: model:ir.model.fields,field_description:amanecer_stock_barcode.field_stock_location__block_state
+#: model:ir.model.fields,field_description:amanecer_stock_barcode.field_stock_production_lot__block_state
+msgid "Block State"
+msgstr "Estado de Bloqueo"
+
+#. module: amanecer_stock_barcode
 #. openerp-web
 #: code:addons/amanecer_stock_barcode/static/src/xml/qweb_templates.xml:0
 #, python-format
 msgid "Scan the dest. location"
 msgstr "Escanea la ubicación de destino"
+
+#. module: amanecer_stock_barcode
+#: code:addons/amanecer_stock_barcode/models/stock_quant.py:0
+#, python-format
+msgid ""
+"The inventory move couldn't be execute due to the location being blocked."
+msgstr ""
+msgstr "La transferencia de inventario no pudo ser ejecutada ya que la ubicación ha sido bloqueada."
+
+#. module: amanecer_stock_barcode
+#: code:addons/amanecer_stock_barcode/models/stock_quant.py:0
+#, python-format
+msgid "The inventory move couldn't be execute due to the lot being blocked."
+msgstr "La transferencia de inventario no pudo ser ejecutada ya que el lote ha sido bloqueado."
+
+#. module: amanecer_stock_barcode
+#: code:addons/amanecer_stock_barcode/models/stock_quant.py:0
+#, python-format
+msgid ""
+"The inventory move couldn't be executed due to the product being blocked."
+msgstr ""
+msgstr "La transferencia de inventario no pudo ser ejecutada ya que el producto ha sido bloqueado."
 
 #. module: amanecer_stock_barcode
 #. openerp-web
@@ -39,37 +88,24 @@ msgid "The scanned Source Location in invalid."
 msgstr "La ubicación de origen es incorrecta."
 
 #. module: amanecer_stock_barcode
-#. openerp-web
-#: code:addons/amanecer_stock_barcode/static/src/js/client_action/abstract_client_action.js:0
-#, python-format
-msgid "There are no lines to increment."
-msgstr "No hay líneas apra incrementar."
-
-#. module: amanecer_stock_barcode
-#. openerp-web
-#: code:addons/amanecer_stock_barcode/static/src/js/client_action/abstract_client_action.js:0
-#: code:addons/amanecer_stock_barcode/static/src/js/client_action/abstract_client_action.js:0
-#, python-format
-msgid "This location is not a child of the main location."
-msgstr "Esta ubicación no es hija de la ubicación principal."
-
-#. module: amanecer_stock_barcode
-#. openerp-web
-#: code:addons/amanecer_stock_barcode/static/src/js/client_action/abstract_client_action.js:0
-#, python-format
+#: model:ir.model.fields,help:amanecer_stock_barcode.field_block_mixin__block_state
+#: model:ir.model.fields,help:amanecer_stock_barcode.field_product_product__block_state
+#: model:ir.model.fields,help:amanecer_stock_barcode.field_product_template__block_state
+#: model:ir.model.fields,help:amanecer_stock_barcode.field_stock_location__block_state
+#: model:ir.model.fields,help:amanecer_stock_barcode.field_stock_production_lot__block_state
 msgid ""
-"This location is not a child of the selected locations on the inventory "
-"adjustment."
+"With this you can block the registry for any reason, and it won't be able to"
+" use."
 msgstr ""
-"Esta ubicación no es hija de la ubicación seleccionada en los ajustes de "
-"inventario."
+"Con esto podrás bloquear el registro, sea la razón que sea y no será posible"
+" utilizarla."
 
 #. module: amanecer_stock_barcode
 #. openerp-web
 #: code:addons/amanecer_stock_barcode/static/src/js/client_action/abstract_client_action.js:0
 #, python-format
 msgid "You are expected to scan a source location."
-msgstr "Se espera que escanees una ubicación de origen."
+msgstr "Se espera que escanees una ubicación "
 
 #. module: amanecer_stock_barcode
 #. openerp-web
@@ -83,20 +119,8 @@ msgstr "Se espera que escanees más productos o una ubicación de destino."
 #: code:addons/amanecer_stock_barcode/static/src/js/client_action/abstract_client_action.js:0
 #: code:addons/amanecer_stock_barcode/static/src/js/client_action/abstract_client_action.js:0
 #, python-format
-msgid ""
-"You are expected to scan one or more products or a package available at the "
-"picking's location"
-msgstr ""
-"Se espera que escanees uno o más productos o un paquete disponible en la "
-"ubicación de la transferencia"
-
-#. module: amanecer_stock_barcode
-#. openerp-web
-#: code:addons/amanecer_stock_barcode/static/src/js/client_action/abstract_client_action.js:0
-#: code:addons/amanecer_stock_barcode/static/src/js/client_action/abstract_client_action.js:0
-#, python-format
 msgid "You are expected to scan one or more products."
-msgstr "Se espera que escanees uno o más productos."
+msgstr "Escanea uno o más productos."
 
 #. module: amanecer_stock_barcode
 #. openerp-web
