@@ -18,7 +18,7 @@ msgstr ""
 #. module: amanecer_stock_barcode
 #: model:ir.actions.report,print_report_name:amanecer_stock_barcode.product_zebra_label_report
 msgid "'%s Zebra Label' % object.display_name"
-msgstr "%s Etiqueta Zebra"
+msgstr "'%s Etiqueta Zebra' % object.display_name"
 
 #. module: amanecer_stock_barcode
 #: model_terms:ir.ui.view,arch_db:amanecer_stock_barcode.product_zebra_label_template
