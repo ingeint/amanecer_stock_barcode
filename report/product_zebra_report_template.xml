@@ -6,9 +6,9 @@
             <t t-foreach="docs" t-as="o">
                 <t t-set="product" t-value="o.product_id"/>
                 <div class="page article" style="width: 100%;">
-                    <h1 class="text-center font-weight-bold" style="margin: 0px;">
+                    <h3 class="text-center font-weight-bold" style="margin: 0px; font-size: 1.5em;">
                         <t t-esc="product.display_name"/>
-                    </h1>
+                    </h3>
                     <div class="text-center">
                         <p style="margin: 0px; font-size: 1.35em;">
                             <span class="font-weight-bold">Qty: </span>
